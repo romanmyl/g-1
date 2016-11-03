@@ -1,10 +1,13 @@
-head {
+body {
     background-color: black;
+    color: white;
+}
+span {
     color: white;
 }
 nav {
      text-decoration: none;
-     color: #fff; 
+     color: white; 
      display: block;
      font-family: Calibri;
      font-size: 24px;
@@ -13,4 +16,5 @@ nav {
      left: 35px;
      top: 17px;
      z-index: 999;
-     }
+    
+}
