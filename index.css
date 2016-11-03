@@ -6,17 +6,18 @@
     color: white;
 }
     nav {
+     position: fixed;   
      text-decoration: none;
      color: white; 
      display: block;
      font-family: Calibri;
      font-size: 24px;
      letter-spacing: 1px;
-     position: fixed;
      left: 1000px;
      top: 10px;
      z-index: 999;
 }
+.row {
   overflow: auto;
   width: 100%; 
 }
