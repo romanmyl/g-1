@@ -17,6 +17,10 @@
      top: 10px;
      z-index: 999;
 }
+    span {
+    font-family: Calibri;
+    font-size: 12px;
+}
     .row {
       overflow: auto;
       width: 100%; 
@@ -30,4 +34,5 @@
       list-style: none;
       width: 94%;
       margin: 150px 0 100px 35px;
-      padding-left: -1em; }
+      padding-left: -1em; 
+}
