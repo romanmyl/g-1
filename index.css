@@ -1,11 +1,11 @@
-body {
+    body {
     background-color: black;
     color: white;
 }
-span {
+    span {
     color: white;
 }
-nav {
+    nav {
      text-decoration: none;
      color: white; 
      display: block;
@@ -13,8 +13,21 @@ nav {
      font-size: 24px;
      letter-spacing: 1px;
      position: fixed;
-     left: 35px;
-     top: 17px;
+     left: 1000px;
+     top: 10px;
      z-index: 999;
-    
 }
+  overflow: auto;
+  width: 100%; 
+}
+.bands-list {
+  color: white;
+  font-family: Calibri;
+  font-size: 72px;
+  letter-spacing: 5px;
+  font-size: 42px;
+  list-style: none;
+  width: 94%;
+  margin: 150px 0 100px 35px;
+  padding-left: -1em; }
+} 
