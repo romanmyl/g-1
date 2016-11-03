@@ -1,18 +1,16 @@
 head {
     background-color: black;
+    color: white;
 }
 nav {
-    display: block;
-    color: white;
-     font-family: SuisseIntl-Medium, Calibri;
-  font-size: 24px;
-  letter-spacing: 1px;
-  -webkit-transition: all 0.4s ease-in-out;
-  -moz-transition: all 0.4s ease-in-out;
-  -ms-transition: all 0.4s ease-in-out;
-  transition: all 0.4s ease-in-out;
-  position: fixed;
-  left: 35px;
-  top: 17px;
-  z-index: 999;
-  }
+     text-decoration: none;
+     color: #fff; 
+     display: block;
+     font-family: Calibri;
+     font-size: 24px;
+     letter-spacing: 1px;
+     position: fixed;
+     left: 35px;
+     top: 17px;
+     z-index: 999;
+     }
