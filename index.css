@@ -51,35 +51,40 @@ table {
     color: white;
 }
     span {
-    color: white;
+    text-decoration: none;
     font-family: Calibri;
-    font-size: 16px;
+    font-size: 24px;
 }
     nav {
      position: fixed;  
      display: block;
-     text-decoration: none;
-     left: 1000px;
-     top: 10px;
+     font-size: 24px;
+     left: 950px;
+     top: 20px;
      z-index: 999;
 }
-    p {
-     color: white; 
+    p { 
      font-family: Calibri;
      font-size: 24px;
+     letter-spacing: 1px;
+    }
+    a {
+     color: white;
+     text-decoration: none;
+     font-family: Calibri;
      letter-spacing: 1px;
     }
     .row {
       overflow: auto;
       width: 100%; 
 }
-    .bands-list {
+    li {
       color: white;
       text-decoration: none;
-      font-family: Calibri;
-      font-size: 72px;
-      letter-spacing: 5px;
-      width: 94%;
-      margin: 150px 0 100px 35px;
+      font-family: 'Comfortaa', cursive;
+      font-size: 40px;
+      letter-spacing: 3px;
+      width: 54%;
+      margin: 80px 0 50px 100px;
       padding-left: -1em; 
 }
