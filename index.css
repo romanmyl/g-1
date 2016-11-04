@@ -1,5 +1,6 @@
+    
     body {
-    background-color: white;
+    background-color: black;
     color: white;
 }
     span {
@@ -9,7 +10,7 @@
 }
     nav {
      position: fixed;   
-     text-decoration: none;
+     text-decoration-color: white;
      color: white; 
      display: block;
      font-family: Calibri;
