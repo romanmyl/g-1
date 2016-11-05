@@ -45,7 +45,11 @@ q:before, q:after {
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
-}    
+}
+/* -------------- Start -------------------------------- */
+    * {
+        max-width: 1200px;
+    }
     body {
     background-color: black;
     color: white;
@@ -73,26 +77,22 @@ table {
      color: white;
      text-decoration: none;
      letter-spacing: 1px;
+     z-index: 999;
     }
-    .row {
-      overflow: auto;
-      width: 100%; 
-}
     li {
       color: white;
       text-decoration: none;
       font-family: 'Comfortaa' ;
       font-size: 40px;
       letter-spacing: 3px;
-      width: 54%;
-      margin: 80px 0 50px 100px;
-      padding-left: -1em; 
+      width: 400px;
+      margin: 80px 0 0px 100px; 
       opacity: 0.2;
 }
     li:hover { 
-      cursor: pointer;
       opacity: 1; 
-      transition: 0.8s ease-in-out;      
+      transition: 0.8s ease-in-out;
+      
 }
     #arrow {
         color: white;
@@ -104,3 +104,14 @@ table {
         opacity: 1;
         transition: 0.8s ease-in-out;
     }
+    img {
+        position: fixed;
+        float:left;
+        left: 500px;
+        top: 0;
+        overflow:hidden;
+        height: 700px;
+        display: block;
+	    opacity: 0;
+    }    
+       
