@@ -3,88 +3,117 @@
     <head>
         <meta charset="utf-8">
         <title>Great-7</title>
-        <link rel="stylesheet" href="index.css" type="text/css"> 
-        <link  rel="shortcut icon" href="images/ico/g-2-favicon-16x16.png" type="image/png">
+        <link rel="stylesheet" href="css/index.css" type="text/css"> 
+        <link rel="shortcut icon" href="images/ico/g-2-favicon-16x16.png" type="image/png">
         <link href="https://fonts.googleapis.com/css?family=Comfortaa:300,400,700&amp;subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Playfair+Display+SC|Poiret+One|Righteous|Six+Caps&amp;subset=cyrillic" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body>
         <header>
             <nav>     
-                <p><a href="#">Bands &ensp;&nbsp;</a>
-                   <a href="#">About &ensp;&nbsp;</a>   
-                   <a href="#">Contacts</a>
-                 </p>
+                <p class="menu"><a class="menu-button" href="#">Bands &ensp;&nbsp;</a>
+                   <a class="menu-button" href="#">About &ensp;&nbsp;</a>   
+                   <a class="menu-button" href="#">Contacts</a>
+                </p>
             </nav>
         </header>
         <section class="row">
-        	<article class="bands-list">
-					<ul class="bands-list" >
-						<li bands-description="Океан Ельзи — ..."
-							description="Коротко про гурт Океан Ельзи">
-							<a href="#"><span style="opacity: 1">01 &ensp;</span>Океан Ельзи</a>
-							<span id="arrow">&ensp;&ensp;&#10070;</span>
-							<img class="img-bands-1" src="images/bands/oe/oe.jpg" style="opacity: 1">
+        	<article class="col1"> 
+					<ul class="list">
+						<li id="oe-list">
+							<a id="oe" href="#"><span class="number-list">01 &ensp;</span>Океан Ельзи
+							<span class="arrow">&ensp;&ensp;&#10070;</span>
+							</a>
 						</li>
-						<li bands-description="Скрябін — ..."
-							description="Коротко про гурт Скрябіна">
-							<a href="#skrjabin-1"><span>02 &ensp;</span>Скрябін</a>
-							<span id="arrow">&ensp;&ensp;&#10070;</span>
+						<li>
+							<a id="skrjabin" href="#skrjabin-1"><span class="number-list">02 &ensp;</span>Скрябін
+							<span class="arrow">&ensp;&ensp;&#10070;</span>
+							</a>	
 						</li>
-						<li bands-description="Тартак — ..."
-							description="Коротко про гурт Тартак">
-							<a href="#"><span>03 &ensp;</span>Тартак</a>
-							<span id="arrow">&ensp;&ensp;&#10070;</span>
-						</li>	
-						<li bands-description="Бумбокс — ..."
-							description="Коротко про гурт Бумбокс">
-							<a href="#"><span>04 &ensp;</span>Бумбокс</a>
-							<span id="arrow">&ensp;&ensp;&#10070;</span>
+						<li>
+							<a id="tartak"	href="#"><span class="number-list">03 &ensp;</span>Тартак
+							<span class="arrow">&ensp;&ensp;&#10070;</span>
+							</a>
 						</li>
-						<li bands-description="Скай — ..."
-							description="Коротко про гурт Скай">
-							<a href="#"><span>05 &ensp;</span>Скай</a>
-							<span id="arrow">&ensp;&ensp;&#10070;</span>
+						<li>
+							<a id="skaj" href="#"><span class="number-list">04 &ensp;</span>Скай
+							<span class="arrow">&ensp;&ensp;&#10070;</span>
+							</a>
 						</li>
-						<li
-							bands-description="ТНМК — ..."
-							description="Коротко про гурт ТНМК"
-							<a href="#"><span>06 &ensp;</span>ТНМК</a>
-							<span id="arrow">&ensp;&ensp;&#10070;</span>
+						<li>
+							<a id="bumbox"	href="#"><span class="number-list">05 &ensp;</span>Бумбокс
+							<span class="arrow">&ensp;&ensp;&#10070;</span>
+							</a>
 						</li>
-						<li bands-description="Плач Єремії — ..."
-							description="Коротко про гурт Плач Єремії"
-							<a href="#"><span>07 &ensp;</span>Плач Єремії</a>
-							<span id="arrow">&ensp;&ensp;&#10070;</span>
+						
+						<li>
+							<a id="tnmk" href="#"><span class="number-list">06 &ensp;</span>ТНМК
+							<span class="arrow">&ensp;&ensp;&#10070;</span>
+							</a>
+						</li>
+						<li>
+							<a id="pt" href="#"><span class="number-list">07 &ensp;</span>Піккардійська <span class="arrow"> &ensp;&ensp;&#10070;</span>
+							<br> &ensp;&ensp;Терція
+							</a>
 						</li>
 					</ul>
 			</article>
-			<article class="image-bands">
-				<ul>
-					<li>
-						<img id="skrjabin-1"src="images/bands/skrjabin/skrjabin.jpg">	
+			
+			<article class="col2">
+				<ul class="img-bands-about">
+					<li><div class="border-img">
+						<img id="oe-1" src="images/bands/oe/oe.jpg" style="Z-index: 1">
+						</div>
+						<p class="about">"Океан Ельзи" - багаторазово визнані публікою й критиками 
+						як краща рок-група і краща live-група СНД і Східної Європи.</p>
+					</li> 
+					<li><div class="border-img">
+						<img id="skrjabin-1" src="$$$$$$$$$$images/bands/skrjabin/skrjabin.jpg">
+						</div>
+						<p class="about">«Скрябін» — український музичний гурт, що за час своєї творчої активності 
+						пройшов шлях від синті-попу, постпанку і техно до нової романтики та поп-року.</p>
+					</li> 	
+					<li><div class="border-img">
+						<img id="tartak-1" style="display: none" src="images/bands/tartak/tartak.jpg">
+						</div>
+						<p class="about">«Скрябін» — український музичний гурт,так щільно посів своє місце в українській музиці, 
+						що здається став органічною частиною життя.  Жанр - альтернативний рок, репкор панк-рок, реп-рок та фанк.</p>
 					</li>
-					<li>
-						<img id="tartak-1" src="images/bands/tartak/tartak.jpg">
+					<li><div class="border-img">
+						<img id="skaj-1" style="display: none" src="images/bands/skaj/skaj.jpg">
+						</div>
+						<p class="about">«СКАЙ» — український музичний гурт, основними трьома напрямками якого є альтернативний рок, 
+						поп-рок та риси нової хвилі пост-панку. </p>
 					</li>
-					<li>
-						<img id="bumbox-1" src="images/bands/bumbox/bumbox.jpg">	
+					<li><div class="border-img">
+						<img id="bumbox-1" style="display: none" src="images/bands/bumbox/bumbox.jpeg">
+						</div>
+						<p class="about">"Бумбокс" - український хіп-хоп і фанкі-ґрув гурт, нової генерації 
+						із дужу самобутнім виконанням пісень.</p>
 					</li>
-					<li>
-						<img id="skaj-1" src="images/bands/skaj/skaj.jpg">	
+					<li><div class="border-img">
+						<img id="tnmk-1" style="display: none" src="images/bands/tnmk/tnmk.jpg">
+						</div>
+						<p class="about">«Танок на Майдані Конґо» («ТНМК») — український гурт, що виконує музику 
+						в стилях репкор, хіп-хоп, рок та фанк. </p>
 					</li>
-					<li>
-						<img id="tnmk-1" src="images/bands/tnmk/tnmk.jpg">	
+					<li><div class="border-img">
+						<img id="pt-1" style="display: none" src="images/bands/pt/[pt.jpeg">
+						</div>
+						<p class="about">«Піккарді́йська Те́рція» (Вокальна формація «Піккардійська Терція») 
+						— українська акапельна формація - справжнє явище в українській музичній культурі.</p>
 					</li>
-					<li>
-						<img id="pe-1" src="images/bands/pe/pe.jpg">	
-					</li>
-				</ul>	
-			</article>
-			<article class="about-bands">
-				
+				</ul>
 			</article>
 			
 		</section>
+		<script
+  src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
+<script type="text/javascript" src="js/index.js"></script> 
     </body>
 </html>

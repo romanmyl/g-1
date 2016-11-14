@@ -1,0 +1,180 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* -------------- Start -------------------------------- */
+    * {
+    	max-width: 100%;
+    	text-decoration: none;
+    	color: blue;
+    }
+    body {
+    	max-width: 980px;
+        min-width: 320px;
+    	border: 3px solid red;
+    	margin: 0 auto;
+    }
+    nav {
+        border: 3px solid lightblue;    
+        display: -webkit-flex;
+        display: flex;
+        -webkit-justify-content: flex-end;
+        justify-content: flex-end;
+    }
+    .menu {
+        position: fixed;
+        top: 8px;
+        left: 60%;
+        font-family: Righteous;
+        font-size: 130%;
+        z-index: 1;
+        
+    }
+    .menu-button {
+        opacity: 1;
+        padding: 5px;
+        margin: 3px;
+        border: 3px solid black;
+    }
+    .menu-button:hover {
+        opacity: 0.5;
+        transition: 0.7s;
+        
+    }
+    
+    
+/* -------------- Section left (list bands) -------------------------------- */
+   
+    
+    .row {
+        display: flex;
+        display: -webkit-flex;
+        flex-direction: ltr;
+        -webkit-flex-direction: row;
+    	border: 3px solid blue;
+    }
+     .col1 {
+     	float: left;
+    	border: 3px solid yellow;
+    	width:50%;
+    } 
+    .list {
+    	border: 3px solid orange;
+    } 
+    .list .number-list {
+        text-decoration: none;
+        font-family: Poiret One, cursive;
+        font-weight: bold;
+        font-size: 50%;
+    }
+    #oe-list {
+        opacity: 1;
+    }
+    .col1 li {
+    	opacity: 0.2;
+    	width: 100%;
+    	height:50%;
+    	border: 3px solid green;
+    	padding: 10% 0 10% 0%;
+        font-family: Comfortaa, serif;
+        font-weight: bold;
+        font-size: 250%;
+    } 
+    .col1 li:hover  {
+    	opacity: 1;
+    	transition: 1.2s;
+    	transform: translate(3%,0);
+    }
+    .arrow  {
+    	opacity: 0;
+    	font-size: 50%;
+    }
+    .col1 li:hover .arrow  {
+    	opacity: 1;
+    	transition: 2.5s;
+    }
+ 
+    
+/* -------------- Section right (foto with discription) -------------------------------- */
+   
+
+    .col2 {
+        position: fixed;
+        top: 0;
+        left: 50%;
+        width: 50%;
+    	border: 3px solid pink;
+    	height:100%;
+    }
+    li {
+        position: relative;
+    	border: 3px solid grey;
+    	width:100%;
+    	z-index:0;
+    	font-family: 'EB Garamond', serif;
+    	font-size: 130%;
+    }
+    .img-bands-about p {
+        padding-top: 85%;
+        padding-left: 5%;
+        position: inherit;
+        z-index: 5;
+    }
+    
+    .border-img {
+        position: absolute;
+        width: 100%;
+        height: 800px;
+        border: 3px solid navy;
+    }
+    
+    img {
+        position: absolute;
+        display: block;
+        overflow: hidden;
+        
+    }
