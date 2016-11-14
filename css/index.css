@@ -50,7 +50,10 @@ table {
     * {
     	max-width: 100%;
     	text-decoration: none;
-    	color: blue;
+    	color: white;
+    }
+    html {
+        background-color: black;
     }
     body {
     	max-width: 980px;
@@ -155,13 +158,14 @@ table {
     	border: 3px solid grey;
     	width:100%;
     	z-index:0;
-    	font-family: 'EB Garamond', serif;
-    	font-size: 130%;
     }
     .img-bands-about p {
-        padding-top: 85%;
+        bottom: 0;
         padding-left: 5%;
+        width: 490px;
         position: inherit;
+        font-family: 'PT Serif', serif;
+    	font-size: 130%;
         z-index: 5;
     }
     
