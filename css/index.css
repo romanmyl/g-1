@@ -50,7 +50,7 @@ table {
     * {
     	max-width: 100%;
     	text-decoration: none;
-    	color: white;
+    	color: #F5F5F5;
     }
     html {
         background-color: black;
@@ -118,7 +118,7 @@ table {
         opacity: 1;
     }
     .col1 li {
-    	opacity: 0.2;
+    	opacity: 0.4;
     	width: 100%;
     	height:50%;
     	border: 3px solid green;
@@ -140,6 +140,16 @@ table {
     	opacity: 1;
     	transition: 2.5s;
     }
+    #skrjabin:hover #oe-img  {
+    	opacity: 0;
+    	transition: 2s;
+    	z-index: 0;
+    }
+    #skrjabin:hover #skrjabin-img  {
+    	opacity: 1;
+    	transition: 2s;
+    	z-index: 4;
+    }
  
     
 /* -------------- Section right (foto with discription) -------------------------------- */
@@ -154,18 +164,18 @@ table {
     	height:100%;
     }
     li {
-        position: relative;
+        position: inherit;
     	border: 3px solid grey;
     	width:100%;
-    	z-index:0;
     }
     .img-bands-about p {
         bottom: 0;
         padding-left: 5%;
+        padding-bottom: 5%;
         width: 490px;
-        position: inherit;
-        font-family: 'PT Serif', serif;
-    	font-size: 130%;
+        position: fixed;
+        font-family: 'EB Garamond', serif;
+    	font-size: 22px;
         z-index: 5;
     }
     
@@ -180,5 +190,6 @@ table {
         position: absolute;
         display: block;
         overflow: hidden;
+        z-index:0;
         
     }
