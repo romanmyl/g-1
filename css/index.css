@@ -85,11 +85,11 @@ table {
         opacity: 1;
         padding: 5px 10px 5px;
         margin: 3px;
+        transition: all 0.7s cubic-bezier(0.42, 0, 0.57, 0.99);
 /*        border: 3px solid black;  */
     }
     .menu-button:hover {
         opacity: 0.5;
-        transition: 0.7s;
         
     }
     
@@ -130,31 +130,154 @@ table {
         font-family: Comfortaa, serif;
         font-weight: bold;
         font-size: 250%;
+        transition: all 1s cubic-bezier(0.42, 0, 0.57, 0.99);
+    	
     } 
     .col1 li:hover  {
     	opacity: 1;
-    	transition: 1.2s;
     	transform: translate(3%,0);
+    	 
     }
     .arrow  {
     	opacity: 0;
     	font-size: 50%;
+    	transition: all 2s cubic-bezier(0.42, 0, 0.57, 0.99);
     }
     .col1 li:hover .arrow  {
     	opacity: 1;
-    	transition: 2.5s;
     }
-    #skrjabin:hover #oe-img  {
+    
+/*---------------------------- Transition immage when hover items list  ---------------*/    
+    
+
+
+    #oe-img  {
+        position:absolute;
+        z-index:4;
+        transition: all 1s cubic-bezier(0.42, 0, 0.57, 0.99);
     	opacity: 0;
-    	transition: 2s;
-    	z-index: 0;
     }
-    #skrjabin:hover #skrjabin-img  {
-    	opacity: 1;
-    	transition: 2s;
-    	z-index: 4;
+    #oe-about  {
+        position:absolute;
+        transition: all 1s cubic-bezier(0.42, 0, 0.57, 0.99);
+    	font-size: 22px;
+    	text-shadow: 0.6px 0.6px 1.2px black; 
+    	color: aliceblue;
+    	opacity: 0;
     }
- 
+    
+    
+    #skrjabin-img  {
+        position:absolute;
+        z-index:4;
+        transition: all 1s cubic-bezier(0.42, 0, 0.57, 0.99);
+    	opacity: 0;
+    }
+    #skrjabin-about  {
+        color: #637273;
+        position:absolute;
+        transition: all 1s cubic-bezier(0.42, 0, 0.57, 0.99);
+    	font-size: 22px;
+    	text-shadow: 0.6px 0.6px 1.2px black; 
+    	color: aliceblue;
+    	opacity: 0;
+    }
+    
+    
+    #tartak-img  {
+        position:absolute;
+        z-index:4;
+        transition: all 1s cubic-bezier(0.42, 0, 0.57, 0.99);
+    	opacity: 0;
+    }
+    #tartak-about  {
+        position:absolute;
+        transition: all 1s cubic-bezier(0.42, 0, 0.57, 0.99);
+    	font-size: 22px;
+    	text-shadow: 0.6px 0.6px 1.2px black; 
+    	color: aliceblue;
+    	opacity: 0;
+    }
+    
+    
+    #skaj-img  {
+        position:absolute;
+        z-index:4;
+        transition: all 1s cubic-bezier(0.42, 0, 0.57, 0.99);
+    	opacity: 0;
+    }
+    #skaj-about  {
+        position:absolute;
+        transition: all 1s cubic-bezier(0.42, 0, 0.57, 0.99);
+    	font-size: 22px;
+    	text-shadow: 0.6px 0.6px 1.2px black; 
+    	color: aliceblue;
+    	opacity: 0;
+    }
+    
+   
+    #bumbox-img  {
+        position:absolute;
+        z-index:4;
+        transition: all 1s cubic-bezier(0.42, 0, 0.57, 0.99);
+    	opacity: 0;
+    }
+    #bumbox-about  {
+        position:absolute;
+        transition: all 1s cubic-bezier(0.42, 0, 0.57, 0.99);
+    	font-size: 22px;
+    	text-shadow: 0.6px 0.6px 1.2px black; 
+    	color: aliceblue;
+    	opacity: 0;
+    }
+    
+    
+    #tnmk-img  {
+        position:absolute;
+        z-index:4;
+        transition: all 1s cubic-bezier(0.42, 0, 0.57, 0.99);
+    	opacity: 0;
+    }
+    #tnmk-about  {
+        position:absolute;
+        transition: all 1s cubic-bezier(0.42, 0, 0.57, 0.99);
+    	font-size: 22px;
+    	text-shadow: 0.6px 0.6px 1.2px black; 
+    	color: aliceblue;
+    	opacity: 0;
+    }
+    
+    
+    #pt-img  {
+        position:absolute;
+        z-index:4;
+        transition: all 1s cubic-bezier(0.42, 0, 0.57, 0.99);
+    	opacity: 0;
+    }
+    #pt-about  {
+        position:absolute;
+        transition: all 1s cubic-bezier(0.42, 0, 0.57, 0.99);
+    	font-size: 22px;
+    	text-shadow: 0.6px 0.6px 1.2px black; 
+    	color: aliceblue;
+    	opacity: 0;
+    }
+    
+    #background-about {
+        position: fixed;
+        transition: all 1s cubic-bezier(0.42, 0, 0.57, 0.99);
+    	font-size: 22px;
+    	text-shadow: 0.6px 0.6px 1.2px black; 
+    	color: aliceblue;
+    	opacity: 0.3;
+    	z-index: 1;
+    	top: 82%;
+        padding-left: 2.5%;
+        padding-bottom: 5%;
+        width: 490px;
+        font-family: 'EB Garamond', serif;
+    }
+
     
 /* -------------- Section right (foto with discription) -------------------------------- */
    
@@ -167,19 +290,17 @@ table {
 /*    	border: 3px solid pink;  */
     	height:100%;
     }
-    li {
+    .col2 li {
         position: inherit;
 /*    	border: 3px solid grey;  */
     	width:100%;
     }
        .img-bands-about p {
-        position: fixed;
         top: 82%;
         padding-left: 5%;
         padding-bottom: 5%;
         width: 490px;
         font-family: 'EB Garamond', serif;
-    	font-size: 22px;
         z-index: 5;
 /*         border: 3px solid grey;  */
     }
@@ -192,7 +313,4 @@ table {
 /*        border: 3px solid navy;  */
     }
     
-    img {
-        position: inherit;
-        
-    }
+
