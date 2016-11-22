@@ -182,7 +182,7 @@ table {
 
     .menu-button {
         opacity: 1;
-        padding: 8px;
+        padding: 5px;
         width: auto;
      	color: #F5F5F5;
         transition: all 0.7s cubic-bezier(0.42, 0, 0.57, 0.99);
