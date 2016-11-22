@@ -28,14 +28,15 @@
                               <li><a class="menu-points" href="#group-members">Склад гурту</a></li>
                               <li><a class="menu-points" href="#discography">Дискографія</a></li>
                               <li><a class="menu-points" href="#photos">Фото</a></li>
+                              <li><a class="menu-points" href="#coments">Коменти</a></li>
                             </ul>
                         </div>
                         <a id="on-top" href="#top">Нагору</a>
                     </div>
                     <div id="right-menu-section">
                    	    <a class="menu-button" href="index.html">Home</a>
-                	    <a class="menu-button" href="#">About</a>   
-                	    <a class="menu-button" href="#">Contacts</a>
+                	    <a class="menu-button" href="about.html">About</a>   
+                	    <a class="menu-button" href="contacts.html">Contacts</a>
                 	</div>
                 </div>
             </nav>
@@ -143,6 +144,7 @@
                     <br> 
                 
                     <h2><span>&#10070;&ensp;&ensp;</span>Історія гурту<span>&ensp;&ensp;&#10070;</span></h2>
+                    <br>
                     <h3>До 1998 року, львівський період</h3>
                     
                     <img id="oe-photo-history" src="images/bands/oe/oe-4.jpg" alt="oe-history">
@@ -265,6 +267,7 @@
                     <div id="group-members">
                        <br>   
                        <h2><span>&#10070;&ensp;&ensp;</span>Склад гурту<span>&ensp;&ensp;&#10070;</span></h2>
+                       <br>
                        <h3>Теперішні учасники</h3>
                        <ul>
                            <li>Святослав Вакарчук — вокал (1994 — до сьогодні);</li>
@@ -286,7 +289,7 @@
                     <div id="discography">
                     <br>    
                        <h2><span>&#10070;&ensp;&ensp;</span>Дискографія<span>&ensp;&ensp;&#10070;</span></h2>
-                       
+                       <br>
                        <h3>Студійні альбоми</h3>
                        <ul>
                            <li>1998 — Там, де нас нема;</li>
@@ -376,6 +379,36 @@
                        <br>
                        
                    </div>
+                   
+                   <div id="coments"> 
+                    <br>   
+                       <h2><span>&#10070;&ensp;&ensp;</span>Коменти<span>&ensp;&ensp;&#10070;</span></h2>
+                       <br><br>
+                       
+<!-- insert disques ------------------ -->                        
+                        <div id="disqus_thread"></div>
+                        <script>
+                               
+                            var disqus_config = function () {
+                            this.page.url = "https://romanmyl.github.io/g-1/index.html";  // Replace PAGE_URL with your page's canonical URL variable
+                            this.page.identifier = "/oe/"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+                            };
+                            
+                            (function() { // DON'T EDIT BELOW THIS LINE
+                            var d = document, s = d.createElement('script');
+                            s.src = '//https-romanmyl-github-io-g-1.disqus.com/embed.js';
+                            s.setAttribute('data-timestamp', +new Date());
+                            (d.head || d.body).appendChild(s);
+                            })();
+                        </script>
+                        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+                                        
+                        <script type="text/javascript" src="js/index.js"></script>
+   
+<!--------------------------------- -->   
+                    <br><br>
+                    </div>
+                       
             </section>  
                  
             <footer>
@@ -390,7 +423,13 @@
 		src="https://code.jquery.com/jquery-3.1.1.min.js"
 		integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
 		crossorigin="anonymous"></script>
-	<script type="text/javascript" src="js/index.js"></script> 
-		
+	<script type="text/javascript" src="js/index.js"></script>
+
+<!-- insert disques ------------------ -->
+	
+	<script id="dsq-count-scr" src="//https-romanmyl-github-io-g-1.disqus.com/count.js" async></script>	
+
+<!------------------------------------ -->
+
 </body>
 </html>
