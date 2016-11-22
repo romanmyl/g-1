@@ -57,13 +57,10 @@ table {
     }
     body {
     	max-width: 980px;
-    	max-height: 600px;
         min-width: 320px;
-/*    	border: 3px solid red;  */
     	margin: 0 auto;
     }
     nav {
-/*        border: 3px solid lightblue;    */
         display: -webkit-flex;
         display: flex;
         -webkit-justify-content: flex-end;
@@ -71,10 +68,9 @@ table {
     }
 /*---------------------------- drop menu ------------------------------------*/
 
-/*--------------------------------------------------------------------------*/
     .menu {
         position: fixed;
-        top: 8px;
+        top: 5px;
         left: 60%;
         font-family: Righteous;
         font-size: 130%;
@@ -86,7 +82,6 @@ table {
         padding: 5px 10px 5px;
         margin: 3px;
         transition: all 0.7s cubic-bezier(0.42, 0, 0.57, 0.99);
-/*        border: 3px solid black;  */
     }
     .menu-button:hover {
         opacity: 0.5;
@@ -102,16 +97,13 @@ table {
         display: -webkit-flex;
         flex-direction: ltr;
         -webkit-flex-direction: row;
-/*    	border: 3px solid blue;  */
     }
+    
      .col1 {
      	float: left;
-/*    	border: 3px solid yellow;  */
     	width:50%;
     } 
-    .list {
-/*    	border: 3px solid orange;  */
-    } 
+    
     .list .number-list {
         text-decoration: none;
         font-family: Poiret One, cursive;
@@ -125,7 +117,6 @@ table {
     	opacity: 0.4;
     	width: 100%;
     	height:50%;
-/*    	border: 3px solid green; */
     	padding: 10% 0 10% 0%;
         font-family: Comfortaa, serif;
         font-weight: bold;
@@ -133,6 +124,7 @@ table {
         transition: all 1s cubic-bezier(0.42, 0, 0.57, 0.99);
     	
     } 
+    
     .col1 li:hover  {
     	opacity: 1;
     	transform: translate(3%,0);
@@ -140,6 +132,7 @@ table {
     }
     .arrow  {
     	opacity: 0;
+    	vertical-align: 4px;
     	font-size: 50%;
     	transition: all 2s cubic-bezier(0.42, 0, 0.57, 0.99);
     }
@@ -149,8 +142,6 @@ table {
     
 /*---------------------------- Transition immage when hover items list  ---------------*/    
     
-
-
     #oe-img  {
         position:absolute;
         z-index:4;
@@ -161,12 +152,11 @@ table {
         position:absolute;
         transition: all 1s cubic-bezier(0.42, 0, 0.57, 0.99);
     	font-size: 22px;
-    	text-shadow: 0.6px 0.6px 1.2px black; 
+    	text-shadow: 2px 1px 9px  black;
     	color: aliceblue;
     	opacity: 0;
     }
-    
-    
+
     #skrjabin-img  {
         position:absolute;
         z-index:4;
@@ -178,12 +168,11 @@ table {
         position:absolute;
         transition: all 1s cubic-bezier(0.42, 0, 0.57, 0.99);
     	font-size: 22px;
-    	text-shadow: 0.6px 0.6px 1.2px black; 
+    	text-shadow: 2px 1px 9px  black;
     	color: aliceblue;
     	opacity: 0;
     }
-    
-    
+
     #tartak-img  {
         position:absolute;
         z-index:4;
@@ -194,11 +183,10 @@ table {
         position:absolute;
         transition: all 1s cubic-bezier(0.42, 0, 0.57, 0.99);
     	font-size: 22px;
-    	text-shadow: 0.6px 0.6px 1.2px black; 
+    	text-shadow: 2px 1px 9px  black;
     	color: aliceblue;
     	opacity: 0;
     }
-    
     
     #skaj-img  {
         position:absolute;
@@ -206,47 +194,47 @@ table {
         transition: all 1s cubic-bezier(0.42, 0, 0.57, 0.99);
     	opacity: 0;
     }
+    
     #skaj-about  {
         position:absolute;
         transition: all 1s cubic-bezier(0.42, 0, 0.57, 0.99);
     	font-size: 22px;
-    	text-shadow: 0.6px 0.6px 1.2px black; 
+    	text-shadow: 2px 1px 9px  black;
     	color: aliceblue;
     	opacity: 0;
     }
     
-   
     #bumbox-img  {
         position:absolute;
         z-index:4;
         transition: all 1s cubic-bezier(0.42, 0, 0.57, 0.99);
     	opacity: 0;
     }
+    
     #bumbox-about  {
         position:absolute;
         transition: all 1s cubic-bezier(0.42, 0, 0.57, 0.99);
     	font-size: 22px;
-    	text-shadow: 0.6px 0.6px 1.2px black; 
+    	text-shadow: 2px 1px 9px  black; 
     	color: aliceblue;
     	opacity: 0;
     }
-    
-    
+
     #tnmk-img  {
         position:absolute;
         z-index:4;
         transition: all 1s cubic-bezier(0.42, 0, 0.57, 0.99);
     	opacity: 0;
     }
+    
     #tnmk-about  {
         position:absolute;
         transition: all 1s cubic-bezier(0.42, 0, 0.57, 0.99);
     	font-size: 22px;
-    	text-shadow: 0.6px 0.6px 1.2px black; 
+    	text-shadow: 2px 1px 9px  black; 
     	color: aliceblue;
     	opacity: 0;
     }
-    
     
     #pt-img  {
         position:absolute;
@@ -254,47 +242,31 @@ table {
         transition: all 1s cubic-bezier(0.42, 0, 0.57, 0.99);
     	opacity: 0;
     }
+    
     #pt-about  {
         position:absolute;
         transition: all 1s cubic-bezier(0.42, 0, 0.57, 0.99);
     	font-size: 22px;
-    	text-shadow: 0.6px 0.6px 1.2px black; 
+    	text-shadow: 2px 1px 9px  black; 
     	color: aliceblue;
     	opacity: 0;
     }
     
-    #background-about {
-        position: fixed;
-        transition: all 1s cubic-bezier(0.42, 0, 0.57, 0.99);
-    	font-size: 22px;
-    	text-shadow: 0.6px 0.6px 1.2px black; 
-    	color: aliceblue;
-    	opacity: 0.3;
-    	z-index: 1;
-    	top: 82%;
-        padding-left: 2.5%;
-        padding-bottom: 5%;
-        width: 490px;
-        font-family: 'EB Garamond', serif;
-    }
-
-    
 /* -------------- Section right (foto with discription) -------------------------------- */
    
-
     .col2 {
         position: fixed;
         top: 0;
         left: 50%;
         width: 50%;
-/*    	border: 3px solid pink;  */
     	height:100%;
     }
+    
     .col2 li {
         position: inherit;
-/*    	border: 3px solid grey;  */
     	width:100%;
     }
+    
        .img-bands-about p {
         top: 82%;
         padding-left: 5%;
@@ -302,15 +274,12 @@ table {
         width: 490px;
         font-family: 'EB Garamond', serif;
         z-index: 5;
-/*         border: 3px solid grey;  */
     }
 
-    
     .border-img {
         position: absolute;
         width: 100%;
         height: 800px;
-/*        border: 3px solid navy;  */
     }
     
 

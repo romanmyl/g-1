@@ -81,3 +81,32 @@ $("#pt").hover(function(){
     $('#pt-about').css('opacity','0');
 });
 
+//------ soft scrolling  -----------------//
+
+$(function() {
+	var $page = $('html, body');
+	$('a[href*="#"]').click(function() {
+		$page.animate({
+			scrollTop: $( $.attr(this, 'href') ).offset().top
+		-13}, 2000);
+		return false;
+	});
+});
+
+//-------------------  fixed player -------------------------//
+
+$(document).ready(function () {
+      var offset = $('#fixed-player').offset();
+    var topPadding = 95, bottomPadding = 192;
+    $(window).scroll(function() {
+        if ($(window).scrollTop() > offset.top) {
+        if ($(document).height() - bottomPadding > $(window).scrollTop() + 
+        $("#fixed-player").height()) $("#fixed-player").stop().animate({
+            marginTop: $(window).scrollTop() - offset.top + topPadding
+            });
+            } else {
+            $('#fixed-player').stop().animate({marginTop: 40});
+        }
+    });
+});
+
