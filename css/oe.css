@@ -358,7 +358,13 @@ table {
      position: relative;
      width: 50%;
      height: auto;
-     margin: 0 30px 30px 0;
+     margin: 0 30px 30px 0; -webkit-filter: grayscale(100%);
+     filter: grayscale(100%);
+     transition: 1.5s ease-in-out;
+ }
+ 
+ #oe-photo-2004-2012:hover {
+     -webkit-filter: grayscale(0%);filter: grayscale(0%);
  }
  
  #oe-photo-zemla {
@@ -366,8 +372,7 @@ table {
      position: relative;
      width: 50%;
      height: auto;
-     margin: 0 30px 30px 0;
-     -webkit-filter: grayscale(100%);
+     margin: 0 30px 30px 0; -webkit-filter: grayscale(100%);
      filter: grayscale(100%);
      transition: 1.5s ease-in-out;
  }
