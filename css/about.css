@@ -83,6 +83,7 @@ table {
         color: #F5F5F5;
         transition: all 0.7s cubic-bezier(0.42, 0, 0.57, 0.99);
     }
+    
     .menu-button:hover {
         opacity: 0.5;    
     }
