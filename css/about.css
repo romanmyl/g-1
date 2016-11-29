@@ -53,6 +53,7 @@ table {
     }
     
     html, body {
+        position: relative;
         display: block;
         background-color: #303130;
     	max-width: 980px;
@@ -89,6 +90,7 @@ table {
     }
     
    .black-box {
+       position: absolute;
        display: block;
        margin: 100px 20px 100px 20px;
        padding: 20px;
