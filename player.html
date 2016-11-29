@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+ <head>
+    <meta charset="utf-8">
+    <title>G-7 Player</title>
+    
+        <link rel="stylesheet" href="css/player.css" type="text/css"/>
+        <link rel="shortcut icon" href="images/ico/g-2-favicon-16x16.png" type="image/png">
+    
+    <!-- JS FILE's  -->
+   <script
+		src="https://code.jquery.com/jquery-3.1.1.min.js"
+		integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+		crossorigin="anonymous"></script> 
+<!-- 	<script src="js/jquery.js"></script>  -->
+	<script src="js/player.js"></script>
+    <script src="js/jquery-audioControls.js"></script>
+    
+ </head> 
+
+<body>
+<div class="mainContainer">
+
+	<div class="containerPlayer">
+	
+		<div id="playerContainer">
+		<div id="controlContainer">  
+			
+			<ul class="controls">
+			<li>
+				<a href="#" class="shuffle" data-attr="shuffled"></a>
+			</li>
+				<li>
+					<a href="#" class="left" data-attr="prevAudio"></a>
+				</li>
+				<li>
+					<a href="#" class="play" data-attr="playPauseAudio"></a>
+				</li>
+				<li>
+					<a href="#" class="right" data-attr="nextAudio"></a>
+				</li>
+				<li>
+					<a href="#" class="repeat" data-attr="repeatSong"></a>
+				</li>
+			</ul>
+			<div class="audioDetails">
+				<span class="songPlay"></span>
+				<span data-attr="timer" class="audioTime"></span>
+			</div>
+			<div class="progress">
+				<div data-attr="seekableTrack" class="seekableTrack"></div>
+				<div class="updateProgress"></div>
+			</div>
+			
+		</div>
+		
+		<div class="volumeControl">
+			<div class="volume volume1"></div>
+			<input class="bar" data-attr="rangeVolume" type="range" min="0" max="1" step="0.05" value="0.2" />
+		</div>
+		
+			<div id="listContainer" class="playlistContainer">
+				<ul id="playListContainer">
+					<li data-src="audio/oe/oe-leleki.mp3">
+						<a href="#">
+							Лелеки
+						</a><span class="timing">4:04</span>
+					</li>
+					<li data-src="audio/oe/oe-na-nebі.mp3">
+						<a href="#">
+							На небі
+						</a><span class="timing">3:42</span>
+					</li>
+					<li data-src="audio/oe/oe-obijmy.mp3">
+						<a href="#">
+							Обійми
+						</a><span class="timing">3:46</span>
+					</li>
+					<li data-src="audio/oe/oe-sosni.mp3">
+						<a href="#">
+							Сосни
+						</a><span class="timing">4:31</span>
+					</li>
+					<li data-src="audio/oe/oe-striljaj.mp3">
+						<a href="#">
+							Стріляй
+						</a><span class="timing">4:53</span>
+					</li>
+					<li data-src="audio/oe/oe-ti-kvitka.mp3">
+						<a href="#">
+							Ти квітка
+						</a><span class="timing">4:17</span>
+					</li>
+					<li data-src="audio/oe/oe-ti-sobi-sama.mp3">
+						<a href="#">
+							Ти собі сама
+						</a><span class="timing">3:49</span>
+					</li>
+					<li data-src="audio/oe/oe-ne-jdy.mp3">
+						<a href="#">
+							Не йди
+						</a><span class="timing">5:06</span>
+					</li>
+					<li data-src="audio/oe/oe-bez-boju.mp3">
+						<a href="#">
+							Без бою 
+						</a><span class="timing">4:21</span>
+					</li>
+				</ul>
+			</div>
+		
+	</div>
+	</div>
+	
+
+</div>
+
+
+	
+</body>
+    
+    
+</html>
