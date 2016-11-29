@@ -52,7 +52,7 @@ table {
      	color: #202020;  
     }
     
-    html, body, nav, .menu {
+    html, body {
         display: block;
         background-color: #303130;
     	max-width: 980px;
@@ -68,11 +68,9 @@ table {
     }
 
     .menu {
-        margin: 0 auto;
-        width: 980px;
         position: fixed;
         top: 8px;
-        right: 0%;
+        left: 54%;
         font-family: Righteous;
         font-size: 130%;
         z-index: 1;  
