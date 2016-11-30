@@ -1,0 +1,25 @@
+    .menu {
+        position: fixed;
+        top: 8px;
+        left: 54%;
+        font-family: Righteous;
+        font-size: 130%;
+        z-index: 1;  
+    }
+    
+    .menu-button {
+        opacity: 1;
+        padding: 5px 10px 5px;
+        margin: 3px;
+        color: #F5F5F5;
+        transition: all 0.5s ease-in-out;
+    }
+    
+    .menu-button:hover {
+        opacity: 0.5;    
+    }
+    
+    .burger-menu-button, .main-title, 
+    .dropdown-menu-section, .menu-points {
+        display: none;
+    }

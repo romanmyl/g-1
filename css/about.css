@@ -68,31 +68,11 @@ table {
         justify-content: flex-end;
     }
 
-    .menu {
-        position: fixed;
-        top: 8px;
-        left: 54%;
-        font-family: Righteous;
-        font-size: 130%;
-        z-index: 1;  
-    }
-    
-    .menu-button {
-        opacity: 1;
-        padding: 5px 10px 5px;
-        margin: 3px;
-        color: #F5F5F5;
-        transition: all 0.7s cubic-bezier(0.42, 0, 0.57, 0.99);
-    }
-    
-    .menu-button:hover {
-        opacity: 0.5;    
-    }
-    
+
    .black-box {
        position: absolute;
        display: block;
-       margin: 100px 20px 100px 20px;
+       margin: 10% 3% 10% 3%;
        padding: 20px;
        width: 100%;
        font-family: Righteous;
