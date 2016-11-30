@@ -23,3 +23,17 @@
     .dropdown-menu-section, .menu-points {
         display: none;
     }
+    
+    
+   .black-box {
+       position: absolute;
+       display: block;
+       margin: 10% 3% 10% 3%;
+       padding: 20px;
+       width: 100%;
+       font-family: Righteous;
+       font-size: 3.8em;
+       line-height: 1.1em;
+       text-shadow: -2px -2px #000, 0 2px 0 #444;
+       color: #222;
+   }
