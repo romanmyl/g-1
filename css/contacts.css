@@ -46,7 +46,7 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-/* -------------- Start -------------------------------- */
+/* -------------- Start --------------- */
     * {
     	text-decoration: none;
      	color: #202020;  
@@ -68,7 +68,6 @@ table {
         justify-content: flex-end;
     }
 
-   
    p, span {
        opacity: 1;
        transition: all 0.7s cubic-bezier(0.42, 0, 0.57, 0.99);
@@ -77,4 +76,3 @@ table {
    p:hover span {
        opacity: 0;
    }
-   
