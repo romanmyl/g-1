@@ -67,37 +67,6 @@ table {
         justify-content: flex-end;
     }
 
-    .menu {
-        position: fixed;
-        top: 8px;
-        left: 60%;
-        font-family: Righteous;
-        font-size: 130%;
-        z-index: 1;
-        
-    }
-    .menu-button {
-        opacity: 1;
-        padding: 5px 10px 5px;
-        margin: 3px;
-        color: #F5F5F5;
-        transition: all 0.7s cubic-bezier(0.42, 0, 0.57, 0.99);
-    }
-    
-    .menu-button:hover {
-        opacity: 0.5;
-    }
-    
-   .black-box {
-       margin: 85px auto;
-       width: 100%;
-       font-family: Righteous;
-       font-size: 305%;
-       text-shadow: -2px -2px #000, 0 2px 0 #444;
-       line-height: 1.3em;
-       text-align: center;
-       color: #222;
-   }
    
    p, span {
        opacity: 1;
