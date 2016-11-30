@@ -53,6 +53,7 @@ table {
     }
     
     html, body {
+        position: relative;
         display: block;
         background-color: #303130;
     	max-width: 980px;
