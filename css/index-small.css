@@ -18,7 +18,7 @@
         font-size: 200%;
      	color: #F5F5F5;
         padding: 10px 15px 0px 15px;
-        border-radius: 5px;
+        border-radius: 5px 0 0 5px;
         transition: all 0.4s ease-in-out;
         z-index: 1000;
         background: linear-gradient(to top,grey, black);
@@ -31,31 +31,34 @@
     
     .main-title:focus ~ .dropdown-menu-section, 
     .main-title:active ~ .dropdown-menu-section, 
-    .dropdown-menu-section:hover { 
+    .dropdown-menu-section:hover {
+        visibility: visible;
         display: block; 
+        width: 228px;
     } 
     
-    .dropdown-menu-section { 
-        display: none;
-        position: absolute;
+    .dropdown-menu-section {
+        visibility: hidden;
+        display: block;
         opacity: 1;
-        padding: 5px 0 10px 7px;
-        margin-top: 10px;
+        padding: 0px 3px 10px 4px;
+        margin-top: -36px;
+        margin-left: 53.5px;
         border: 2px rgba(43, 43, 43, 0.9);       
-        height: 85px;
-        width: auto;
+        height: 33.7px;
+        width: 0px;
      	color: #F5F5F5;
-        border-radius: 5px;
+        overflow: hidden;
         background: linear-gradient(to top,grey, black);
         background: rgba(43, 43, 43, 0.6);
         z-index: 1000;
+        transition: width 1.3s;
     }
     
     .menu-points    {
-        padding: 10px 10px 10px 3px;
-        width: auto;
+        padding: 0px 3px 0px 0px;
      	color: #F5F5F5;
-        line-height:30px;
+        line-height:37px;
         opacity: 1;
         transition: all 0.4s ease-in-out;
         z-index: 99;
@@ -64,14 +67,22 @@
     .menu-points:hover {
         opacity: 0.5;
     }
-
-    .black-box {
-       position: absolute;
-       padding: 14% 3% 7% 5%;
-       width: auto;
-       font-family: Righteous;
-       font-size: 2.0em;
-       line-height: 0.9em;
-       text-shadow: -1px -1px #000, 0 1px 0 #444;
-       color: #222;
+    
+    
+/* -------------- Section left (list bands) -------------------------------- */
+   
+    .col1 {
+        width: 100%;
+    }
+    
+   ul {
+       text-align: center;
    }
+    
+/* -------------- Section right (foto with discription) -------------------------------- */
+   
+    .col2, .col2 li, .img-bands-about p,
+    .border-img {
+        display: none;
+    }
+    

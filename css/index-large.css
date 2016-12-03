@@ -1,0 +1,89 @@
+/*---------------------------- menu --------------------------*/
+
+    .menu {
+        position: fixed;
+        top: 5px;
+        left: 55%;
+        font-family: Righteous;
+        font-size: 130%;
+        z-index: 1;
+        
+    }
+    .menu-button {
+        opacity: 1;
+        padding: 5px 10px 5px;
+        margin: 3px;
+        transition: all 0.7s cubic-bezier(0.42, 0, 0.57, 0.99);
+    }
+    .menu-button:hover {
+        opacity: 0.5;   
+    }
+    
+    .burger-menu-button, .main-title, 
+    .dropdown-menu-section, .menu-points {
+        display: none;
+    }
+   
+/* -------------- Section left (list bands) -------------------------------- */
+   
+    
+    .row {
+        display: flex;
+        display: -webkit-flex;
+        flex-direction: ltr;
+        -webkit-flex-direction: row;
+    }
+    
+     .col1 {
+     	float: left;
+    	width:50%;
+    }  
+/*---------------------------- Transition immage when hover items list  ---------------*/    
+    
+    #oe-img, #skrjabin-img, #tartak-img, #skaj-img, 
+    #bumbox-img, #tnmk-img, #pt-img {
+        position:absolute;
+        z-index:4;
+        transition: all 1s cubic-bezier(0.42, 0, 0.57, 0.99);
+    	opacity: 0;
+    }
+    #oe-about, #skrjabin-about, #tartak-about, #skaj-about, 
+    #bumbox-about, #tnmk-about, #pt-about {
+        position:absolute;
+        transition: all 1s cubic-bezier(0.42, 0, 0.57, 0.99);
+    	font-size: 20px;
+    	text-shadow: 2px 1px 9px  black;
+    	color: aliceblue;
+    	opacity: 0;
+    }
+
+/* -------------- Section right (foto with discription) -------------------------------- */
+   
+    .col2 {
+        position: fixed;
+        top: 0;
+        left: 50%;
+        width: 50%;
+    	height:100%;
+    }
+    
+    .col2 li {
+        position: inherit;
+    	width:100%;
+    }
+    
+       .img-bands-about p {
+        top: 75%;
+        padding-left: 5%;
+        padding-bottom: 5%;
+        width: 490px;
+        font-family: 'EB Garamond', serif;
+        z-index: 5;
+    }
+
+    .border-img {
+        position: absolute;
+        width: 100%;
+        height: 800px;
+    }
+    
