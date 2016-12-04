@@ -73,7 +73,7 @@ table {
 /* -------------- Section left (list bands) -------------------------------- */
    
     
-    .list .number-list {
+    .list .number-list, #pt-07  {
         text-decoration: none;
         font-family: Poiret One, cursive;
         font-weight: bold;
@@ -99,15 +99,39 @@ table {
     	transform: translate(3%,0);
     	 
     }
-    .arrow  {
+    .arrow {
     	opacity: 0;
     	vertical-align: 1.5px;
     	font-size: 0.6em;
     	transition: all 2s cubic-bezier(0.42, 0, 0.57, 0.99);
     }
-    .col1 li:hover .arrow  {
+    
+    #arrow-pt {
+    	opacity: 0;
+    	vertical-align: 1.5px;
+    	font-size: 0.6em;
+    	transition: all 2s cubic-bezier(0.42, 0, 0.57, 0.99);
+    }
+    
+    .col1 li:hover .arrow {
     	opacity: 1;
     }
     
-   
+    
+    .col1 li:hover #arrow-pt  {
+    	opacity: 1;
+    }
+    
+    #pt a {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    #pt-07 {
+        padding-top: 0.8em;
+    }
+    
+   #arrow-pt {
+        padding-top: 0.5em;
+    }
 

@@ -78,6 +78,10 @@
    ul {
        text-align: center;
    }
+   
+   #pt a {
+       justify-content: center;
+   }
     
 /* -------------- Section right (foto with discription) -------------------------------- */
    
