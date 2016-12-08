@@ -146,10 +146,10 @@
         top: 0%;
         left: 0%;
         position:absolute;
-        min-width: 190%;
+        min-width: 193%;
         height: auto;
         z-index: -100;
-        transform: translateX(-15%);
+        transform: translateX(-20%);
         background: url('images/love-ukrainian.jpg') no-repeat;
         background-size: cover;
         transition: 1s opacity;
