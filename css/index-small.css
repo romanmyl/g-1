@@ -84,12 +84,12 @@
    }
    
   .col1 li:hover .arrow {
-      transform: translateX(15px);
+      transform: translateX(35px);
     	opacity: 1;
     }
     
   .col1 li:hover #arrow-pt  {
-        transform: translateX(15px);
+        transform: translateX(35px);
     	opacity: 1;
     }
     

@@ -105,7 +105,7 @@ table {
     	vertical-align: 1.5px;
     	font-size: 0.6em;
     	transition: all 2s cubic-bezier(0.42, 0, 0.57, 0.99);
-    	padding-top: 0.55em;
+    	padding-top: 0.87em;
     }
     
     #arrow-pt {
@@ -113,7 +113,7 @@ table {
     	vertical-align: 1.5px;
     	font-size: 0.6em;
     	transition: all 2s cubic-bezier(0.42, 0, 0.57, 0.99);
-        padding-top: 0.55em;
+        padding-top: 0.87em;
     }
     
     #pt a {
