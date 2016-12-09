@@ -132,11 +132,15 @@
     	z-index: -99;
     }
     
+    #about-line {
+        font-size: 6vh;
+    }
+    
     #about-box {
         height: 6vh;
-        padding: 2.0vh 3vh 2.5vh 3vh;
+        padding: 2.3vh 3vh 2.5vh 3vh;
         margin: 5vh auto;
-        border: .7vh solid aliceblue;
+        border: 0.8vh solid aliceblue;
         border-radius: 3.7vh;
     	opacity: 0.8;
     }
