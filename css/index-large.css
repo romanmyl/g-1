@@ -21,7 +21,7 @@
     }
     
     .burger-menu-button, .main-title, 
-    .dropdown-menu-section, .menu-points {
+    .dropdown-menu-section, .menu-points, .nav-trigger, .nav-item {
         display: none;
     }
    

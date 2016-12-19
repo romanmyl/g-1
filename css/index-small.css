@@ -1,74 +1,190 @@
-    .menu, .menu-button {
+ body {
+  overflow-x: hidden;
+}
+ 
+ .menu, .menu-button {
         display: none;
     }
-    
-    .burger-menu-button {
-        position: fixed;
-        top: 8px;
-        left: 5%;
-        font-family: Righteous;
-        font-size: 130%;
-        z-index: 1;  
-    }
 
-    .main-title {
-        opacity: 1;
-        width: auto;
-        line-height: 0.5;
-        font-size: 200%;
-     	color: #F5F5F5;
-        padding: 10px 15px 0px 15px;
-        border-radius: 5px 0 0 5px;
-        transition: all 0.4s ease-in-out;
-        z-index: 1000;
-        background: linear-gradient(to top,grey, black);
-        background: rgba(43, 43, 43, 0.6);
-    }
+/* -------------- Section slade menu section -------------------------------- */
+
+.navigation {
+  width: 200px;
+  height: 100%;
+  position: fixed;
+  bottom: 0;
+  top: 0px;
+  left: -200px;
+  z-index: 0;
+  padding-top: 70px;
+  list-style: none;
+  background: white;
+}
+
+/* Navigation Menu - List items */
+.nav-item {
+  width: 200px;
+  border-top: 1px solid #111;
+}
+
+.nav-item:last-child {
+  border-bottom: 1px solid #111;
+}
+
+.nav-item a {
+  display: block;
+  padding: 1.5em;
+  background: rgba(0,0,0,0.0);
+  color: black;
+  font-size: 1.2em;
+        font-family: Righteous;
+        font-size: 4.5vh;
+  text-decoration: none;
+  text-align: left;
+  transition: color 0.7s, background-color 1.5s;
+}
+
+.nav-item a:hover {
+  color: white;
+  background-color: black;
+}
+ 
+.cover {
+  min-height: 330%;
+  min-width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  position: absolute;
+  z-index: 25; 
+  background: rgba(0,0,0,0.4);
+}
+  
+/* Site Wrapper - Everything that isn't navigation */
+.site-wrap {
+  min-height: 330%;
+  min-width: 100%;
+  background: inherit;
+  position: absolute;
+  top: 0;
+  
+  bottom: 100%;
+  left: 0;
+  z-index: 30;
+  padding: 4em;
     
-    .main-title:hover {
-        opacity: 0.5;
-    }
-    
-    .main-title:focus ~ .dropdown-menu-section, 
-    .main-title:active ~ .dropdown-menu-section, 
-    .dropdown-menu-section:hover {
-        visibility: visible;
-        display: block; 
-        width: 228px;
-    } 
-    
-    .dropdown-menu-section {
-        visibility: hidden;
-        display: block;
-        opacity: 1;
-        padding: 0px 3px 10px 4px;
-        margin-top: -36px;
-        margin-left: 53.5px;
-        border: 2px rgba(43, 43, 43, 0.9);       
-        height: 33.7px;
-        width: 0px;
-     	color: #F5F5F5;
-        overflow: hidden;
-        background: linear-gradient(to top,grey, black);
-        background: rgba(43, 43, 43, 0.6);
-        z-index: 1000;
-        transition: width 1.3s;
-    }
-    
-    .menu-points    {
-        padding: 0px 3px 0px 0px;
-     	color: #F5F5F5;
-        line-height:37px;
-        opacity: 1;
-        transition: all 0.4s ease-in-out;
-        z-index: 99;
-    } 
-    
-    .menu-points:hover {
-        opacity: 0.5;
-    }
-    
-    
+}
+
+/*  -------------Nav Trigger -------------------------*/
+.nav-trigger {
+  position: fixed;
+  clip: rect(0, 0, 0, 0);
+}
+
+label[for="nav-trigger"] {
+  position: fixed;
+  left: 16px; top: 15px;
+  z-index: 1000;
+  height: 36px;
+  width: 50px;
+  cursor: pointer;
+  background-size: contain;
+  display: flex;
+  flex-direction: column;
+}
+
+  label #one, label #two, label #three {
+  background-color: white;
+  margin: 4px;
+  width: 32px;
+  height: 4px;
+}
+
+.nav-trigger + label, .site-wrap, .navigation, .cover {
+  transition: left 0.5s; 
+}
+
+
+
+.nav-trigger:hover label #one, label #two, label #three {
+  background-color: rgba(100,100,100,0.5);
+  transition: all 0.4s;
+}
+  
+ 
+.nav-trigger:checked ~ label #one {
+  position: absolute;
+  top: 8px;
+  transform-origin: 2px 2px;
+  background-color: black;
+  transform: rotate(44.5deg);
+  transition: background-color 5.0s;
+  transition: all 0.5s ease-in-out;
+}
+
+.nav-trigger:checked ~ label #two {
+  position: absolute;
+  top: 18px;
+  background-color: rgba(0,0,0,0);
+  transition: background-color 5.0s;
+  transition: all 0.5s ease-in-out;
+}
+
+.nav-trigger:checked ~ label #three {
+  position: absolute;
+  top: 28px;
+  transform-origin: 2px 2px;
+  background-color: black;
+  transform: rotate(-44.5deg);
+  transform: scaleX(1.);
+  transition: background-color 5.0s;
+  transition: all 0.5s ease-in-out;
+}
+
+
+.nav-trigger:not(:checked) ~ label #one {
+  position: absolute;
+  top: 6px;
+  background-color: white;
+  transform: rotate(0deg);
+  transition: background-color 5.0s;
+  transition: all 0.5s ease-in-out;
+}
+
+.nav-trigger:not(:checked) ~ label #two {
+  position: absolute;
+  top: 18px;
+  background-color: white;
+  transition: background-color 1.0s;
+}
+
+.nav-trigger:not(:checked) ~ label #three {
+  position: absolute;
+  top: 30px;
+  background-color: white;
+  transform: rotate(0deg);
+  transition: background-color 5.0s;
+  transition: all 0.5s ease-in-out;
+}
+
+.nav-trigger:checked ~ .navigation {
+  left: 0px;
+}
+
+.nav-trigger:checked ~ .cover  {
+  left: 200px;
+}
+
+.nav-trigger:checked ~ .site-wrap {
+  left: 200px;
+  box-shadow: 0 0 5px 5px rgba(0,0,0,0.5);
+  z-index: 15;
+  height: 330%;
+}
+
+
+
+
 /* -------------- Section left (list bands) -------------------------------- */
    
     .col1 {
@@ -84,8 +200,8 @@
    }
    
   .col1 li:hover .arrow {
-      transform: translateX(35px);
-    	opacity: 1;
+       transform: translateX(35px);
+       opacity: 1;
     }
     
   .col1 li:hover #arrow-pt  {
@@ -99,4 +215,3 @@
     .border-img {
         display: none;
     }
-    
