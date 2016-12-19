@@ -119,6 +119,7 @@ label[for="nav-trigger"] {
   transform: rotate(44.5deg);
   transition: background-color 5.0s;
   transition: all 0.5s ease-in-out;
+  z-index: 1000;
 }
 
 .nav-trigger:checked ~ label #two {
@@ -126,7 +127,8 @@ label[for="nav-trigger"] {
   top: 18px;
   background-color: rgba(0,0,0,0);
   transition: background-color 5.0s;
-  transition: all 0.5s ease-in-out;
+  transition: all 1.0s ease-in-out;
+  z-index: 500;
 }
 
 .nav-trigger:checked ~ label #three {
@@ -138,6 +140,7 @@ label[for="nav-trigger"] {
   transform: scaleX(1.);
   transition: background-color 5.0s;
   transition: all 0.5s ease-in-out;
+  z-index: 1000;
 }
 
 
@@ -148,13 +151,15 @@ label[for="nav-trigger"] {
   transform: rotate(0deg);
   transition: background-color 5.0s;
   transition: all 0.5s ease-in-out;
+  z-index: 1000;
 }
 
 .nav-trigger:not(:checked) ~ label #two {
   position: absolute;
   top: 18px;
   background-color: white;
-  transition: background-color 1.0s;
+  transition: background-color 1.5s;
+  z-index: 500;
 }
 
 .nav-trigger:not(:checked) ~ label #three {
@@ -164,6 +169,7 @@ label[for="nav-trigger"] {
   transform: rotate(0deg);
   transition: background-color 5.0s;
   transition: all 0.5s ease-in-out;
+  z-index: 1000;
 }
 
 .nav-trigger:checked ~ .navigation {
