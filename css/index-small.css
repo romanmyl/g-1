@@ -103,9 +103,10 @@ label[for="nav-trigger"] {
   transition: left 0.5s; 
 }
 
-.nav-trigger:hover ~ label[for="nav-trigger"] {
-  transform: scale(1.04,1.04);
-  transition: 0.3s;
+.nav-trigger:hover ~ label {
+  transform: scale(1.05);
+  opacity: 0.7;
+  transition: all 0.5s ease-in-out;
 }
   
 .nav-trigger:checked ~ label #one {
