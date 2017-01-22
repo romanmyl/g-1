@@ -1,3 +1,10 @@
+
+body {
+    	max-width: 980px;
+        min-width: 665px;
+    	margin: 0 auto;
+    }
+    
 /*---------------------------- menu --------------------------*/
 
     .menu {
@@ -27,7 +34,28 @@
    
 /* -------------- Section left (list bands) -------------------------------- */
    
+  .list .number-list, #pt-07  {
+        font-size: 40%;
+    }
     
+    .col1 li {
+    	padding: 10% 0 10% 3%;
+        font-size: 250%;
+    } 
+    
+    
+    .ball, #ball-pt {
+    	vertical-align: 1.5px;
+    	font-size: 0.6em;
+    	padding-top: 0.87em;
+    }
+    
+    #pt-07 {
+        padding-top: 0.8em;
+    }
+ 
+/* ------------- -----------------------------------*/
+ 
     .row {
         display: flex;
         display: -webkit-flex;
@@ -46,12 +74,12 @@
     }
     
     
-  .col1 li:hover .arrow {
+  .col1 li:hover .ball {
         transform: translateX(25px);
     	opacity: 1;
     }
     
-    .col1 li:hover #arrow-pt  {
+    .col1 li:hover #ball-pt  {
         transform: translateX(25px);
     	opacity: 1;
     }
@@ -139,13 +167,12 @@
     #about-box {
         height: 6vh;
         padding: 2.3vh 3vh 2.5vh 3vh;
-        margin: 5vh auto;
+        margin: 5vw auto;
         border: 0.8vh solid aliceblue;
         border-radius: 3.7vh;
     	opacity: 0.8;
         background: rgba(0,0,0,0.9);
     }
-    
     
     video { 
         top: 0%;
